@@ -3,7 +3,14 @@ node {
 	echo("foobar");
 }
 
-stage name: 'Second'
+stage name: 'Secondi'
 node {
 	echo("foobar flaf giraf");
 }
+
+stage name: 'Input'
+node {
+	input message: "Does staging/ look good?"
+	echo("awesome");
+}
+
